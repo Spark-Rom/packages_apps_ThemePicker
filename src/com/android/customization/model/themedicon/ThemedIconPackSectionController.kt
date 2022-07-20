@@ -68,9 +68,7 @@ class ThemedIconPackSectionController(
             null /* defaultValue */
         )
         if (pkg == null) {
-            if (isAvailable(context)) {
-                fetchThemedIconPack()
-            }
+            fetchThemedIconPack()
         } else {
             themedIconPackage = pkg
         }
