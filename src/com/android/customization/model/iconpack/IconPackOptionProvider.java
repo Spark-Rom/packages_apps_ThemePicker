@@ -128,7 +128,7 @@ public class IconPackOptionProvider {
     }
 
     private void addDefault() {
-        IconPackOption option = new IconPackOption(mContext.getString(R.string.default_theme_title), true);
+        IconPackOption option = new IconPackOption(mContext.getString(R.string.default_theme_title));
         try {
             for (String iconName : ICONS_FOR_PREVIEW) {
                 option.addIcon(loadIconPreviewDrawable(iconName, ANDROID_PACKAGE));
